@@ -1,7 +1,8 @@
 {
-    "usingComponents": {
-    
-    },
-    "navigationStyle": "custom",
-    "disableScroll": true
-  }
+    "usingComponents":  {
+
+                        },
+    "navigationStyle":  "default",
+    "navigationBarTitleText":  "手势识别",
+    "disableScroll":  false
+}

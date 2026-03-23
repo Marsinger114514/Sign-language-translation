@@ -1,0 +1,56 @@
+/* pages/index/index.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  camera {
+    width: 100%;
+    height: 60vh;
+    background-color: #000;
+  }
+  .control-bar {
+    display: flex;
+    justify-content: space-around;
+    margin: 20rpx 0;
+    flex-wrap: wrap;
+  }
+  .control-bar button {
+    margin: 10rpx;
+  }
+  
+  /* 滑块容器：扩大触摸区域 */
+  .slider-container {
+    padding: 30rpx 40rpx;
+    margin: 20rpx 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 20rpx;
+    box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+  }
+  
+  /* 滑块本身：增加高度和宽度 */
+  .slider-container slider {
+    width: 60%;           /* 调整宽度比例 */
+    height: 80rpx;        /* 增高滑块轨道 */
+  }
+  
+  /* 可选：微调滑块按钮颜色 */
+  .slider-container slider {
+    active-color: #07c160;
+    background-color: #ddd;
+    block-size: 16px;     /* 滑块按钮的大小（部分基础库支持） */
+  }
+  
+  .result {
+    text-align: center;
+    font-size: 40rpx;
+    margin-top: 30rpx;
+  }
+  .result text {
+    display: block;
+    margin: 10rpx 0;
+  }

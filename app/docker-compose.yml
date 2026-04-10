@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  gesture-recognition:
+    build: .
+    container_name: gesture-app
+    ports:
+      - "5000:5000"
+    restart: always
+    environment:
+      - PORT=5000
+      - TZ=Asia/Shanghai
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/logs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
